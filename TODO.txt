@@ -1,0 +1,6 @@
+Clarify and structure the section types (Prompts, Info, Resources)
+Add some caveats RE: Github CLI to the main README
+Shell/Terminal/CLI interchangeable
+Return codes
+Git CLI output
+Filenaming structure
