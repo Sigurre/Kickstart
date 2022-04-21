@@ -28,35 +28,40 @@ As such, there are a few things that you'll want to be familiar with before jump
 In this repository (repo for short) is a collection of folders and files that serve as the structure of the "curriculum". I will be referring to the top level directories as "modules", while the folders nested within them are "submodules" _They are organized in such a way to build upon eachother in succession, but you can work with them at your own pace and in whatever order you would like._ You may find that there are sections that you feel familair and confident with, and want to skip over. Or maybe there's a module that is particularly difficult or confusing, but you don't want to get hung up on it. Feel free to skip ahead! There are a few caveats though:
 
 * There are some modules (or submodules) that I will mark as **critical**. These are ones that I consider paramount to understanding the concepts of this tutorial, and should not be *completely* skipped.
-* The entire structure of this tutorial relies on the concepts in Module 1.1 (GIT), *and I highly recommend completing it before moving on to the next one.*
+* The entire structure of this tutorial relies on the concepts in Module 1.1 and 1.2, *and I highly recommend completing them before moving on to the next one.*
 * "Completion" is a loose term here, and can vary depending on your comfort level. While there are some goals that will be stated in each module, there's no checklist you need to go through. Move on when you feel ready, and feel free to reach out if you have questions or want a subject expanded on.
 
 Finally, there are a few important notes about the project:
 
 * This project works on the honor system, in a sense. You don't need to "submit" any work you complete if you don't want to. I'm serving as a mentor, not as your professor.
-	* The one exception to this is Module 1, because it involves working with this repo and pushing changes to it.
-	* I do recommend pushing at least some of your work to the repo in order to get familiar with GIT and Github, but I won't review it unless you request it in Github.
-	* If you want help with something, want something expanded upon, or want critique of your work you will do so via GIT and Github (see Module 1.1).
+	* The one exception to this is Module 1.2, because it involves working with this repo and pushing changes to it.
+	* You'll be pushing your work to your own personal branch on Github (see Module 1.2) for consistency and practice, but I won't critique your work unless requested.
+	* If you want help with something, want something expanded upon, or want critique of your work you will do so via GIT and Github (see Module 1.2--seriously, it's an important module).
 * Most modules will be split in to an **Info** section, a **Prompt**, section and a **Resources** section.
 	* The **Info** section will include my personal thoughts on the subject(s) covered in the module.
 	* The **Prompt** sections will outline the project, task, or concept that is to be explored.
 	* The **Resources** sections will include tutorials and documentation to help you learn how to address the Prompt.
 * I will provide hints and other thoughts in the **Resources** section. I do recommend looking at the information I include here, but try saving it for when you get stuck or have completed the associated Prompt!
+* Whenever a **Prompt** requires you to make files/code/folders do so inside of the (sub)module the **Prompt** is located.
 
 **FINALLY** it should be noted that you can follow this guide directly through your web browser in Github, or by opening the Markdown files (denoted by the `.md` extension, just like this README!) on your local machine in the editor of your choice.
 
 ## Get Started
 
-Enough is enough! Let's get started! In order to begin you'll need to clone this repo to your local machine, and in order to do so you'll need [GIT](https://git-scm.com/). I'll go over details of GIT in Module 1, but for now you can install it using one of the following methods:
+Enough is enough! Let's get started! In order to begin you'll need to clone this repo to your local machine, and in order to do so you'll need [GIT](https://git-scm.com/). I'll go over details of GIT in Module 1.2, but for now you can install it using one of the following methods:
 
 * [Recommended] Download and install it from the CLI using the [package manager for your Distro](https://git-scm.com/download/linux), or [Homebrew](https://git-scm.com/download/mac) for macOS.
 	* (GIT is also prepackaged with Xcode, but it won't be covered in this guide)
 * Download it from the [GIT website](https://git-scm.com/downloads).
 
-Once you've downloaded and installed GIT we can clone the repo. Open your terminal and change to the directory where you want to keep it. I will be using the home directory (denoted by `~` in BASH and ZSH) in all my examples for simplicity. Personally I usually have a `Repos` folder in my home directory where I keep all my projects, and will be using that as an example this time.
+Once you've downloaded and installed GIT we'll need to setup your credentials with GIT and Github, then clone the Kickstart repo. There's multiple ways to do it (some easier than others), and some are preferable. However you choose to do it is up to you, but I recommend setting up SSH authentication to work with Github since that's what most companies use, but it's not a very beginner friendly method. Use whatever method works best for you currently.
+
+Follow Github's docs on [setting up your credentials](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git). Also take a look at their [Getting Started with Git](https://docs.github.com/en/get-started/getting-started-with-git) documentation for general guidance on how to set everything up. 
+
+All of my examples in this project will be using the Terminal, but however you accomplish the task at hand is up to you. If you're cloning the repo via CLI then open your terminal and change to the directory where you want to keep it. I will be using the home directory (denoted by `~` in BASH and ZSH) in all my examples for simplicity. Personally I usually have a `Repos` folder in my home directory where I keep all my projects, and will be using that as an example this time.
 
 1. Change to the desired directory with `cd` (change directory). Typing `cd` in the terminal on its own will take you to the home directory
-2. Clone the repo with `git clone git@github.com:Sigurre/Kickstart.git`
+2. Clone the repo with `git clone git@github.com:Sigurre/Kickstart.git` or `git clone https://github.com/Sigurre/Kickstart.git`
 
 Example output:
 ```
