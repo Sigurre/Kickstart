@@ -96,6 +96,8 @@ There are so many tutorials and guides on using BASH and its kin out there. I'll
 
 ## Tutorials
 
+A great place to start finding tutorials: [13 resources for learning to write better Bash code](https://www.redhat.com/sysadmin/learn-bash-scripting)
+
 [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
 
 [Getting started with Bash](https://riptutorial.com/bash)
