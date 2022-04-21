@@ -10,7 +10,7 @@ M - MariaDB or MySQL
 
 P - PHP, Perl, or Python
 
-**Linux** serves as the foundational OS for the server/client infrastructure that makes up the web. Almost all servers--whether they be a webserver for a Fortune 500 company, or the file server in an office--run on Linux. It serves as a host for the other items in the stack...
+**Linux** serves as the foundational OS for the server/client infrastructure that makes up the web. Almost all servers--whether they be a webserver for a Fortune 500 company, or the file server in an office--run on Linux. It serves as a host for the other items in the stack.
 
 **Apache** is the software foundation behind the modern web. Apache HTTP Server serves as the backbone for most webservers. Other software tools have broken in to the field, but Apache servers running on Linux machines are still used globally.
 
@@ -34,7 +34,7 @@ Working in most technical fields (*especially* fields like IT and DevOps) hinge 
 
 Throughout this project I encourage you to leverage your shell wherever possible. **_This is especially true for file management._** Using GIT from the shell is also useful, and using a shell based text editor like VIM, NeoVIM, or nano for basic tasks are invaluable. You're welcome to use whatever tools you'd like, but sometimes simpler is better.
 
-Most of my work is done from my Terminal and a web browser. As such almost all of my examples and instructions will be built with a shell focused workflow in mind. GUI tools are an attractive option to default to, and while I don't necessarily discourage it I do recommend being familiar with their shell equivalents. If you're more comfortable moving files in Finder, or editing your code in VSCode, that's totally fine. But you should know how to accomplish the very basics of each of those applications via the Terminal as well.
+Most of my professional work is done from my Terminal and a web browser. As such almost all of my examples and instructions will be built with a shell focused workflow in mind. GUI tools are an attractive option to default to, and while I don't necessarily discourage it I do recommend being familiar with their shell equivalents. If you're more comfortable moving files in Finder or editing your code in VSCode that's totally fine. But you should know how to accomplish the very basics of each of those applications via the Terminal as well.
 
 ## INFO: Monty Python's Favorite Programming Language
 
@@ -55,9 +55,12 @@ Before providing the Prompts, here are a few key shell concepts that will help c
 * All commands you invoke on a CLI are actually programs being run from a file somewhere on the machine. Even the most basic commands like `ls` (lists items in a directory) or `cd` (change directory) are programs.
 * Most commands accept one or more "arguments" when you invoke them. Depending on the purpose of the command they may be preceeded with one or two dashes (`-` or `--`), or they may just be standalone. 
 	* Using `ls` as an example, we can run the program with the `-S` argument to sort the output by size (largest to smallest): `ls -S`
+	* Furthermore we can provide a directory as a standalone argument to list the files in that directory, rather than the directory we're currently in: `ls /Library`
 * The output of one command can be fed in to the input of another one via "piping". Ths is done with the pipe `|` symbol. 
 	* This lets you chain the function of one program with another, like using `cat` to print the contents of a file to the shell, then "piping" it to the `grep` program to search for a particular word: `cat HelloWorld.txt | grep "dog"`
-* You can find more info on a command by checking its "man" page, or using the `--help` argument if the program has one. The man page (short for manual) can be accessed by prepending `man` to the command. For example, to see the man page for `ls` you would run `man ls`. To see the help page for `git` run `git --help`. 
+* You can find more info on a command by checking its "man" page, or using the `--help` argument if the program has one. The man page (short for manual) can be accessed by prepending `man` to the command. For example, to see the man page for `ls` you would run `man ls`. To see the help page for `git` run `git --help`.
+* Pretty much all commands and programs will output a "return code" after they've run (usually silently). This can be used to determine if a program succesfully ran (`return [0]`) or not.
+	* Looking at `ls` again, we can check the return code to see if a directory exists or not. If we run `ls ~/Kickstart` the program will return `0` if it exists, and return `1` if it doesnt.
 
 Lastly here are the skills that you should be able to perform comfortably via a CLI in order to be succesful:
 

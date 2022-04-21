@@ -12,7 +12,7 @@ Want to cut to the chase? Skip to the **"Get started"** section at the bottom!
 
 The aim of this guide is to expose you to the concepts and tools that are most commonly used in a variety of software development and IT fields, as well as point towards resources that you can leverage to both learn and lean upon.
 
-As such, there are a few things that you'll want to be familiar with before jumping in. Keep in mind that only shallow understanding of these subjects are needed--you don't need to be able to explain them, just that you know they exist! All of these subjects will be explored in a combination of resources, tutorials, and mini projects.
+As such, there are a few things that you'll want to be familiar with before jumping in. Keep in mind that only a shallow understanding of these subjects are needed--you don't need to be able to explain them, just that you know they exist! All of these subjects will be explored in a combination of resources, tutorials, and mini projects.
 
 * Basic Linux and/or macOS knowledge
 * That programs are made of loops, variables, and other logical structures
@@ -37,7 +37,7 @@ There are a few important notes about the project:
 	* The one exception to this is Module 1.2, because it involves working with this repo and pushing changes to it.
 	* You'll be pushing your work to your own personal branch on Github (see Module 1.2) for consistency and practice, but I won't critique your work unless requested.
 	* If you want help with something, want something expanded upon, or want critique of your work you will do so via GIT and Github (see Module 1.2--seriously, it's an important module).
-* Most modules will be split in to an **Info** section, a **Prompt** section, and a **Resources** section.
+* Most modules will be split into an **Info** section, a **Prompt** section, and a **Resources** section.
 	* The **Info** section will include my personal thoughts on the subject(s) covered in the module.
 	* The **Prompt** sections will outline the project, task, or concept that is to be explored.
 	* The **Resources** sections will include tutorials and documentation to help you learn how to address the Prompt.
