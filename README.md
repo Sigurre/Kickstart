@@ -37,12 +37,12 @@ There are a few important notes about the project:
 	* The one exception to this is Module 1.2, because it involves working with this repo and pushing changes to it.
 	* You'll be pushing your work to your own personal branch on Github (see Module 1.2) for consistency and practice, but I won't critique your work unless requested.
 	* If you want help with something, want something expanded upon, or want critique of your work you will do so via GIT and Github (see Module 1.2--seriously, it's an important module).
-* Most modules will be split into an **Info** section, a **Prompt** section, and a **Resources** section.
+* Most modules will be split into an **Info** section, a **Project** section, and a **Resources** section.
 	* The **Info** section will include my personal thoughts on the subject(s) covered in the module.
-	* The **Prompt** sections will outline the project, task, or concept that is to be explored.
+	* The **Project** sections will outline the project, task, or concept that is to be explored.
 	* The **Resources** sections will include tutorials and documentation to help you learn how to address the Prompt.
-* I will provide hints and other thoughts in the **Resources** section. I do recommend looking at the information I include here, but try saving it for when you get stuck or have completed the associated Prompt!
-* Whenever a **Prompt** requires you to make files/code/folders do so inside of the (sub)module the **Prompt** is located (which will be in the `README.md` file for that folder).
+* I will provide hints and other thoughts in a separate file in each module/submodule. I do recommend looking at the information I include here, but try saving it for when you get stuck or have completed the associated Prompt!
+* Whenever a **Project** requires you to make files/code/folders do so inside of the (sub)module the **Project** is located (which will be in the `README.md` file for that folder).
 
 **FINALLY** it should be noted that you can follow this guide directly through your web browser in Github, or by opening the `README.md` files in each module on your local machine in the editor of your choice.
 
@@ -52,6 +52,8 @@ Enough is enough, let's get started! In order to begin you'll need to clone this
 
 * [Recommended] Download and install it from the CLI using the [package manager for your Distro](https://git-scm.com/download/linux), or [Homebrew](https://git-scm.com/download/mac) for macOS.
 * Download it from the [GIT website](https://git-scm.com/downloads).
+
+**Please note:** GIT and the Github CLI are two seperate things. For now you can ignore the Github CLI whenever you come accross it.
 
 Once you've downloaded and installed GIT we'll need to setup your credentials with GIT and Github, then clone the Kickstart repo. There's multiple ways to do it (some easier than others), and some are preferable. However you choose to do it is up to you, but I recommend eventually setting up SSH authentication to work with Github for a number of reasons. Unfortunately it's not a very beginner friendly method, so it can be set up later if needed. Use whatever method works best for you currently.
 
