@@ -38,7 +38,7 @@ Most of my professional work is done from my Terminal and a web browser. As such
 
 ## INFO: Monty Python's Favorite Programming Language
 
-Python (which is actually named after Monty Python, funny enough) is an incredibly robust and flexible programming language. It has exploded in popularity, and is used widely across various fields. We'll be using Python in this project due to its prevalence, as well as its simplicity. Python comes pre-installed on macOS and most Linux Distros. We'll be using **Python 3.8+** in particular. 
+Python (which is actually named after Monty Python, funny enough) is an incredibly robust and flexible programming language. It has exploded in popularity, and is used widely across various fields. We'll be using Python in this project due to its prevalence, as well as its simplicity. Python comes pre-installed on macOS and most Linux Distros. We'll be using **Python 3.8+** in particular.
 
 ### Which programming language is best?
 
@@ -50,13 +50,13 @@ You'll learn to use a number of different languages over the course of your care
 
 The primary focus of this submodule is to ensure that you're comfortable with using the CLI for basic tasks. Working in tech means reading a lot of raw text data, and typing a lot of commands...
 
-Before providing the Prompts, here are a few key shell concepts that will help contextualize things. 
+Before providing the Prompts, here are a few key shell concepts that will help contextualize things.
 
 * All commands you invoke on a CLI are actually programs being run from a file somewhere on the machine. Even the most basic commands like `ls` (lists items in a directory) or `cd` (change directory) are programs.
-* Most commands accept one or more "arguments" when you invoke them. Depending on the purpose of the command they may be preceeded with one or two dashes (`-` or `--`), or they may just be standalone. 
+* Most commands accept one or more "arguments" when you invoke them. Depending on the purpose of the command they may be preceeded with one or two dashes (`-` or `--`), or they may just be standalone.
 	* Using `ls` as an example, we can run the program with the `-S` argument to sort the output by size (largest to smallest): `ls -S`
 	* Furthermore we can provide a directory as a standalone argument to list the files in that directory, rather than the directory we're currently in: `ls /Library`
-* The output of one command can be fed in to the input of another one via "piping". Ths is done with the pipe `|` symbol. 
+* The output of one command can be fed in to the input of another one via "piping". Ths is done with the pipe `|` symbol.
 	* This lets you chain the function of one program with another, like using `cat` to print the contents of a file to the shell, then "piping" it to the `grep` program to search for a particular word: `cat HelloWorld.txt | grep "dog"`
 	* There are similar expressions that allow you to feed a command's output to a file, which is handy for logging and other tasks
 * You can find more info on a command by checking its "man" page, or using the `--help` argument if the program has one. The man page (short for manual) can be accessed by prepending `man` to the command. For example, to see the man page for `ls` you would run `man ls`. To see the help page for `git` run `git --help`.
@@ -81,17 +81,18 @@ TODO: "Nice to have"
 
 These prompts will focus on using the CLI to accomplish certain tasks. As such, they are **critical** and should be done before moving on. Don't skip them unless you know you can do them easily!
 
-Accomplish the following using **ONLY THE TERMINAL!**
+Accomplish the following using **ONLY THE TERMINAL!** You can use a graphical text editor to add text to any created files, but all other tasks should be done via the terminal only!
+
 ## PROMPT 1
 This will be a handful of exercises for you to verify your familiarity with navigating the filesystem via the terminal.
 
 * Open the current submodule directory (where this file is kept)
-* Go to your home directory *using only one command*
+* Go to your home directory
 * Go to the `/bin` directory and list its contents
 * Clear the terminal screen so there's nothing on it
 * Also in the `/bin` directory, list the contents while also listing their creation date/time
 * Navigate one directory up and print its contents to the terminal
-* Navigate to the root directory of your machine
+* Navigate to the root directory of your machine and list its contents
 * Go back to this module's directory and print the directory *path* to the terminal
 * Print the contents of this `README.md` to the terminal
 
@@ -111,9 +112,9 @@ Now we'll start working with files...
 * Delete the directory that contains one of the files you made
 
 ## PROMPT 3
-We're going to continue working with files in some more advanced (but practical) ways. As usual I recommend using the directory this submodule is housed in as your sandbox. *These should be done using just the terminal and a single command*
+We're going to continue working with files in some more advanced (but practical) ways. As usual I recommend using the directory this submodule is housed in as your sandbox. *These should be done using just the terminal and a single command.*
 
-* List all of the files in the `/bin` directory and put the results in a txt file. 
+* List all of the files in the `/bin` directory and put the results in a txt file
 * Print the contents of the file to the terminal and filter out just the word "sleep". Your output should look like this:
 
 ```
@@ -123,7 +124,7 @@ sleep
 * Make the file executable (You don't need to execute it. Nothing would happen anyways since it's just a text file. We just want to *make it* executable!)
 
 ## PROMPT 4
-The previous prompts were designed to prove your mettle, but there are a plethora of other commands you'll need to use in your day to day. For this Prompt take the time to familiarize yourself with these commands and what they do. You don't need to worry about using them right now! Just do some reading up on them, and make sure you have them in your toolbelt in case you need them down the line.
+The previous prompts were designed to prove your mettle, but there are a plethora of other commands you'll need to use in your day to day. For this Prompt take the time to familiarize yourself with these commands and what they do. You don't need to worry about using them right now! Just do some reading up on them, and make sure you have them in your toolbelt in case you need them down the line. Remember to use the program's `man` page!
 
 ```
 date
@@ -138,6 +139,10 @@ which
 ping
 finger
 scp
+cron
+top
+du
+uptime
 ```
 
 There are also a few *file types* you should familiarize yourself with. They're typically denoted by an extension like `.txt` or `.sh`. Again, you don't need to work with them right now. Just look in to what they are and what they're for!
@@ -149,7 +154,7 @@ There are also a few *file types* you should familiarize yourself with. They're 
 .rb
 .tar
 .log
-"rc" files like .bashrc, .vimrc, and .zshrc 
+"rc" files like .bashrc, .vimrc, and .zshrc
 (Note that those "rc" examples are full filenames, and not extensions! The '.' indicates that they're hidden.)
 ```
 
@@ -157,10 +162,10 @@ There are also a few *file types* you should familiarize yourself with. They're 
 
 There are so many tutorials and guides on using BASH and its kin out there. I'll list some of them, but most of what you find googling will probably be sufficient. Personal preference is the biggest factor here. A lot of learning BASH will involve googling something when you hit a wall, but there's a few rules of thumb I like to follow:
 
-1. Check the `man` or `--help` page first. There may be an argument or other quirk you overlooked
-2. Most tasks can be accomplished with an already existing command on your system. Googling can help you determine the best one for the task
-3. Keep things simple, but not too simple. Sure you might be able to accomplish the task using a single command, or you could do the same thing with 11 commands all piping to each other. But maybe the solution with 3 commands piping to each other is the best one?
-4. Tutorials on a program or concept are often more useful than someone outright providing an answer on StackOverflow. It helps to know the basic concepts more than the utilization of those concepts
+1. Check the `man` or `--help` page first. There may be an argument or other quirk you overlooked.
+2. Most tasks can be accomplished with an already existing command on your system. Googling can help you determine the best one for the job.
+3. Keep things simple, but not *too* simple. Sure you might be able to accomplish the task using a single command, or you could do the same thing with 11 commands all piping to each other. But maybe the solution with 3 commands piping to each other is the best one?
+4. Tutorials on a program or concept are often more useful than someone outright providing an answer on StackOverflow. It helps to know the basic concepts more than the utilization of those concepts.
 
 ## Tutorials
 
