@@ -60,7 +60,7 @@ Follow Github's docs on [setting up your credentials](https://docs.github.com/en
 All of my examples in this project will be using the Terminal, but however you accomplish the task at hand is up to you. If you're cloning the repo via CLI then open your terminal and change to the directory where you want to keep it. I will be using the home directory (denoted by `~` in BASH and ZSH) in all my examples for simplicity. Personally I usually have a `Repos` folder in my home directory where I keep all my projects, and will be using that as an example this time.
 
 1. Change to the desired directory with `cd` (change directory). Typing `cd` in the terminal on its own will take you to the home directory
-2. Clone the repo with `git clone git@github.com:Sigurre/Kickstart.git` or `git clone https://github.com/Sigurre/Kickstart.git`
+2. Clone the repo with `git clone git@github.com:Sigurre/Kickstart.git` (using SSH) or `git clone https://github.com/Sigurre/Kickstart.git` (using HTTP)
 
 Example output:
 ```
