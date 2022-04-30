@@ -28,13 +28,15 @@ All NIX OSes are built upon a type of "shell". There's a bit too much to expand 
 
 These shells serve as the basis of how every NIX OS functions. While they are technically nothing more than a text box that accepts typed commands, most (if not all) basic functions rely on them. Even interracting with a GUI is just interfacing with the same commands used by the shell. Moving a file, adding and saving text, connecting to a wifi network--they all leverage the same structures.
 
+**NOTE:** I will use the words "terminal", "shell", and "CLI" interchangeably throughout this repo (for the most part). There are some minor differences between all these terms, but in common conversation they tend to be the same thing. For example: Terminal is the name of the program on macOS that you access the shell *from* (as well as on many Linux distros), but usually when someone says "from the terminal" they are referring to the shell.
+
 ### Leaning on shells
 
 Working in most technical fields (*especially* fields like IT and DevOps) hinge upon proficiency in working with a shell. While there are a suite of graphical tools that can help you accomplish your goals, using a shell whenever you can will make your life easier. This is especially true when interacting with remote servers that are "headless" (meaning they have no monitor, or sometimes even no GPU). Editing a text file using a code editor/IDE is great, but when you need to edit a text file on a machine that you can *only* connect to via SSH in a Terminal window you don't want to be left clueless.
 
-Throughout this project I encourage you to leverage your shell wherever possible. **_This is especially true for file management._** Using GIT from the shell is also useful, and using a shell based text editor like VIM, NeoVIM, or nano for basic tasks are invaluable. You're welcome to use whatever tools you'd like, but sometimes simpler is better.
+Throughout this project I encourage you to leverage your shell wherever possible. **_Using it for file management is basically a necessity._** Using GIT from the shell is also useful, and using a shell based text editor like VIM, NeoVIM, or Nano for basic tasks are invaluable. You're welcome to use whatever tools you'd like, but sometimes simpler is better.
 
-Most of my professional work is done from my Terminal and a web browser. As such almost all of my examples and instructions will be built with a shell focused workflow in mind. GUI tools are an attractive option to default to, and while I don't necessarily discourage it I do recommend being familiar with their shell equivalents. If you're more comfortable moving files in Finder or editing your code in VSCode that's totally fine. But you should know how to accomplish the very basics of each of those applications via the Terminal as well.
+Most of my professional work is done from my Terminal and a web browser. As such almost all of my examples and instructions will be built with a shell focused workflow in mind. GUI tools are an attractive option to default to, and while I in no way discourage it I do recommend being familiar with their shell equivalents. If you're more comfortable moving files in Finder or editing your code in VSCode that's totally fine, but you should know how to accomplish the very basics of each of those applications via the Terminal as well.
 
 ## INFO: Monty Python's Favorite Programming Language
 
@@ -50,7 +52,7 @@ You'll learn to use a number of different languages over the course of your care
 
 The primary focus of this submodule is to ensure that you're comfortable with using the CLI for basic tasks. Working in tech means reading a lot of raw text data, and typing a lot of commands...
 
-Before providing the Prompts, here are a few key shell concepts that will help contextualize things.
+Before providing the Projects, here are a few key shell concepts that will help contextualize things.
 
 * All commands you invoke on a CLI are actually programs being run from a file somewhere on the machine. Even the most basic commands like `ls` (lists items in a directory) or `cd` (change directory) are programs.
 * Most commands accept one or more "arguments" when you invoke them. Depending on the purpose of the command they may be preceeded with one or two dashes (`-` or `--`), or they may just be standalone.
@@ -69,21 +71,19 @@ Lastly here are the skills that you should be able to perform comfortably via a 
 * Move, copy, create, and delete files/folders
 * View information about a machine's disk usage
 * View information about a machine's CPU/RAM/etc usage
-* Connect to another computer to transfer files (like SCP), or interact with it's shell (SSH). NOTE: This may be covered in a later module, I'm undecided. :p
+* Connect to another computer to transfer files (like SCP), or interact with it's shell (SSH). NOTE: This will probably be covered in a later module.
 * Pipe the output of one command in to another, or in to/out of a file
 * Install, uninstall, and update programs and packages
 * Understand how and when to use `sudo`
 * Basic text editing
 
-TODO: "Nice to have"
+# Projects - CRITICAL
 
-# Prompts - CRITICAL
-
-These prompts will focus on using the CLI to accomplish certain tasks. As such, they are **critical** and should be done before moving on. Don't skip them unless you know you can do them easily!
+These Projects will focus on using the CLI to accomplish certain tasks. As such, they are **critical** and should be done before moving on. Don't skip them unless you know you can do them easily!
 
 Accomplish the following using **ONLY THE TERMINAL!** You can use a graphical text editor to add text to any created files, but all other tasks should be done via the terminal only!
 
-## PROMPT 1
+## PROJECT 1
 This will be a handful of exercises for you to verify your familiarity with navigating the filesystem via the terminal.
 
 * Open the current submodule directory (where this file is kept)
@@ -92,12 +92,12 @@ This will be a handful of exercises for you to verify your familiarity with navi
 * Clear the terminal screen so there's nothing on it
 * Also in the `/bin` directory, list the contents while also listing their creation date/time
 * Navigate one directory up and print its contents to the terminal
-* Navigate to the root directory of your machine and list its contents
+* Navigate to the root (`/`) directory of your machine and list its contents
 * Go back to this module's directory and print the directory *path* to the terminal
 * Print the contents of this `README.md` to the terminal
 
 
-## PROMPT 2
+## PROJECT 2
 Now we'll start working with files...
 
 * Create a new file in this submodule called "HelloWorld.txt"
@@ -111,20 +111,19 @@ Now we'll start working with files...
 * Delete the empty directory
 * Delete the directory that contains one of the files you made
 
-## PROMPT 3
-We're going to continue working with files in some more advanced (but practical) ways. As usual I recommend using the directory this submodule is housed in as your sandbox. *These should be done using just the terminal and a single command.*
+## PROJECT 3
+We're going to continue working with files in some more advanced (but practical) ways. As usual I recommend using the directory this submodule is housed in as your sandbox. *These can (and should) be done using a single command.*
 
-* List all of the files in the `/bin` directory and put the results in a txt file
+* List all of the files in the `/bin` directory and put the results in a .txt file
 * Print the contents of the file to the terminal and filter out just the word "sleep". Your output should look like this:
 
 ```
 #YOUR COMMAND HERE
 sleep
 ```
-* Make the file executable (You don't need to execute it. Nothing would happen anyways since it's just a text file. We just want to *make it* executable!)
 
-## PROMPT 4
-The previous prompts were designed to prove your mettle, but there are a plethora of other commands you'll need to use in your day to day. For this Prompt take the time to familiarize yourself with these commands and what they do. You don't need to worry about using them right now! Just do some reading up on them, and make sure you have them in your toolbelt in case you need them down the line. Remember to use the program's `man` page!
+## PROJECT 4
+The previous Projects were designed to prove your mettle, but there are a plethora of other commands you'll need to use in your day to day. For this Project take the time to familiarize yourself with these commands and what they do. You don't need to worry about using them right now! Just do some reading up on them, and make sure you have them in your toolbelt in case you need them down the line. Remember to use the program's `man` page!
 
 ```
 date
@@ -143,6 +142,8 @@ cron
 top
 du
 uptime
+chmod
+chown
 ```
 
 There are also a few *file types* you should familiarize yourself with. They're typically denoted by an extension like `.txt` or `.sh`. Again, you don't need to work with them right now. Just look in to what they are and what they're for!
