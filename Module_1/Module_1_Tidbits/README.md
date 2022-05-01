@@ -41,7 +41,7 @@ I use NeoVim for the text editing side of things, but outside of that there are 
 	* web-search: I can type `google "what's that hipster song with the whistling"` and it will open my default browser with the search results
 	* macos: I can control Apple Music and Spotify from the terminal, as well as launch macOS specific things when needed. For example I can type `ofd` and it will open whatever directory I'm in with Finder
 	* Jump: this lets me mark directories and "jump" to them. Rather than typing `cd ~/Repos/Kickstart/Module_1` I can "mark" that directory and then jump to it like `jump M1`
-* You can also write your own custom aliases and functions to accomplish whatever you need. I have a set of aliases all for Git that I use constantly. I don't need to type `git checkout -b sig` instead I can type `gcob sig`
+* You can also write your own custom aliases and functions to accomplish whatever you need. I have a set of aliases all for Git that I use constantly. I don't need to type `git push --set-upstream origin sig` instead I can type `gpsup`
 
 All of these plugins and settings are contained in config files accross the system, and I use a program called Dotbot and a personal `.dotfiles` repo with all of my settings. If I move onto a new system I just clone that repo and run the install script, and everything needed is unpackaged and installed onto the system.
 
