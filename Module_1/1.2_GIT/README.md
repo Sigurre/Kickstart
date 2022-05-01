@@ -1,4 +1,4 @@
-# Module 1.2 - Tools of the Trade: GIT
+# Module 1.2 - Git
 
 Git is the most widely used SCM (Source Control Manager) in the industry. It's used primarily as a way for groups of developers to collaborate and organize their code in a variety of ways, and you'll need to have a basic understanding of how to use it to succeed. But first, an important distinction:
 
