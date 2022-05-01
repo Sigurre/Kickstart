@@ -1,10 +1,10 @@
-# Module 1.2 - Tools of the Trade: GIT
+# Module 1.2 - Git
 
-GIT is the most widely used SCM (Source Control Manager) in the industry. It's used primarily as a way for groups of developers to collaborate and organize their code in a variety of ways, and you'll need to have a basic understanding of how to use it to succeed. But first, an important distinction:
+Git is the most widely used SCM (Source Control Manager) in the industry. It's used primarily as a way for groups of developers to collaborate and organize their code in a variety of ways, and you'll need to have a basic understanding of how to use it to succeed. But first, an important distinction:
 
-**GIT** is the name of the tool/program, and it utilizes a structure known as a **repository** (repo for short). A repo serves as a central collection of code which is typically hosted on a centralized server. You can have a local GIT repo that never leaves your machine, but typically a company or group will host their repo on their own hardware or with a 3rd party. Two common hosts are **Bitbucket** and **Github** (GH), with the latter being the most popular. That's what we're using for this project!
+**Git** is the name of the tool/program, and it utilizes a structure known as a **repository** (repo for short). A repo serves as a central collection of code which is typically hosted on a centralized server. You can have a local Git repo that never leaves your machine, but typically a company or group will host their repo on their own hardware or with a 3rd party. Two common hosts are **Bitbucket** and **GitHub** (GH), with the latter being the most popular. That's what we're using for this project!
 
-A very brief overview of how GIT works:
+A very brief overview of how Git works:
 
 * There's typically one central "branch". Traditionally this is called `main`, although you may see some older projects that use the name `master`. The term `master` has been abandoned due to its racist roots, but you'll still come across some projects that still use it due to structural/technical reasons.
 * When someone wants to make a change to the codebase they will `checkout` a branch from `main`, make their changes, and then `commit` them to their local branch.
@@ -15,7 +15,7 @@ A very brief overview of how GIT works:
 
 ## INFO: How this repo works
 
-This repo is protected, and requires a PR with an approval in order to merge it in to `main`. This means you can't make a change with `main` checked out on your local machine, then push directly to the repo. You *can* however make your own branch and then `push` it to Github. This can be a handy way to save and publish your work, but it's also how you'll submit your code to the project.
+This repo is protected, and requires a PR with an approval in order to merge it in to `main`. This means you can't make a change with `main` checked out on your local machine, then push directly to the repo. You *can* however make your own branch and then `push` it to GitHub. This can be a handy way to save and publish your work, but it's also how you'll submit your code to the project.
 
 The typical workflow you'll want to follow when submitting your code to the `main` branch of this repo:
 
@@ -31,8 +31,8 @@ You'll only need to do this a few times throughout the project for practice. The
 2. Make sure it's up to date with `git pull`
 3. Make a new branch that you'll use for your work throughout the project by running `git branch`. I'll be using "sig" as my branch name: `git branch sig`
 4. Switch to the new branch with `git checkout`, ie: `git checkout sig`
-5. Make a new file in the Module 1.2 folder. I'll be using the traditional "Hello World": `cd Module_1/1.2_GIT; touch HelloWorld.txt`
-6. Add the file to GIT via `git add` (Note: you can add all changed files from your current directory down to the subdirectories by appending a `.` instead of the filename), ie: `git add .`
+5. Make a new file in the Module 1.2 folder. I'll be using the traditional "Hello World": `cd Module_1/1.2_Git; touch HelloWorld.txt`
+6. Add the file to Git via `git add` (Note: you can add all changed files from your current directory down to the subdirectories by appending a `.` instead of the filename), ie: `git add .`
 7. Commit your change with `git commit -m` followed by a comment in quotes, like: `git commit -m "Initial commit to my personal branch"`. All commits require a message attached to them.
 8. Now we can push the branch to GH by setting its upstream origin branch: `git push --set-upstream origin sig`
 9. Now whenever you make a change on this branch you can commit and push them up to the branch on GH: `git add .` -> `git commit -m "message"` -> `git push`
@@ -44,9 +44,9 @@ I recommend commiting fairly frequently, and pushing whenever you have some "fin
 * File 3 -> Deleted File -> commit 003
 * File 4 -> Created file, added 27 lines -> commit 004
 
-Then I pushed them to the upstream branch on GH... and realized "uh oh, I shouldn't have deleted those two lines in File 2". Instead of having to completely revert all the changes in the push I made (or manually adding the two lines back in) I can instead `revert` commit 001 and push that to GH, while preserving the changes in commits 002 through 004.
+Then I pushed them to the upstream branch on GH... and realized "uh oh, I shouldn't have deleted those two lines in File 2". Instead of having to completely revert all the changes in the push I made (or manually adding the two lines back in) I can instead `revert` commit 002 and push that to GH, while preserving the changes in the other commits.
 
-# PROMPT 1
+# PROJECT 1
 
 Alright let's get down to business... Create a new branch using the one you created in the INFO section as the base branch, then accomplish the following:
 
@@ -62,13 +62,13 @@ After doing this you should have a branch on GH that is based off your personal 
 
 Finally, merge your changes so that they appear in your personal branch on GH.
 
-# PROMPT 2
+# PROJECT 2
 
 As I mentioned, this will be one of the few (if not the only) time you'll open a PR to send to `main`. 
 
 Make a PR against `main` that adds a file called `PRTest.txt` to the module folder with "Lorem ipsum" as the contents, then request review from me (Sigurre). I'll make a request for change. Once the change has been approved on GH you'll merge it in to `main`.
 
-# PROMPT 3
+# PROJECT 3
 
 You'll frequently come across a situation where the `main` branch has had oodles of changes merged in to it by other people since you first checked it out, and now your branch is behind. There are several ways to resolve this, but the best and most common way is with `git rebase`. Accomplish the following:
 
@@ -77,10 +77,10 @@ You'll frequently come across a situation where the `main` branch has had oodles
 * Merge the first branch onto your personal branch
 * Rebase the second branch onto your personal branch, then merge it in to your personal branch
 
-NOTE: Rebasing can be a little hard to wrap your head around, even though it's deceptively simple. Consider requesting my review via a PR on the second branch to help explain things
+NOTE: Rebasing can be a little hard to wrap your head around, even though it's deceptively simple. Consider requesting my review via a PR on the second branch to help explain things if you're at all confused.
 
 # Resources
 
-There's a lot of stuff that GIT can do, and even though it's conceptually simple it's complicated in practice. When in doubt, refer to the [GIT documentation](https://git-scm.com/doc) as well as [Github's docs](https://docs.github.com/en).
+There's a lot of stuff that Git can do, and even though it's conceptually simple it's complicated in practice. When in doubt, refer to the [Git documentation](https://git-scm.com/doc) as well as [GitHub's docs](https://docs.github.com/en).
 
-A dead simple overview of how GIT works can be found at [git - the simple guide](https://rogerdudler.github.io/git-guide/)
+A dead simple overview of how Git works can be found at [git - the simple guide](https://rogerdudler.github.io/git-guide/)

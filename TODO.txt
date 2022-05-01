@@ -1,0 +1,4 @@
+File permissions and ownership
+Add information about SUDO
+Add "nice to have" CLI skills
+Info on ".." and "."
