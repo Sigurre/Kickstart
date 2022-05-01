@@ -1,10 +1,10 @@
 # Module 1.2 - Tools of the Trade: GIT
 
-GIT is the most widely used SCM (Source Control Manager) in the industry. It's used primarily as a way for groups of developers to collaborate and organize their code in a variety of ways, and you'll need to have a basic understanding of how to use it to succeed. But first, an important distinction:
+Git is the most widely used SCM (Source Control Manager) in the industry. It's used primarily as a way for groups of developers to collaborate and organize their code in a variety of ways, and you'll need to have a basic understanding of how to use it to succeed. But first, an important distinction:
 
-**GIT** is the name of the tool/program, and it utilizes a structure known as a **repository** (repo for short). A repo serves as a central collection of code which is typically hosted on a centralized server. You can have a local GIT repo that never leaves your machine, but typically a company or group will host their repo on their own hardware or with a 3rd party. Two common hosts are **Bitbucket** and **Github** (GH), with the latter being the most popular. That's what we're using for this project!
+**Git** is the name of the tool/program, and it utilizes a structure known as a **repository** (repo for short). A repo serves as a central collection of code which is typically hosted on a centralized server. You can have a local Git repo that never leaves your machine, but typically a company or group will host their repo on their own hardware or with a 3rd party. Two common hosts are **Bitbucket** and **GitHub** (GH), with the latter being the most popular. That's what we're using for this project!
 
-A very brief overview of how GIT works:
+A very brief overview of how Git works:
 
 * There's typically one central "branch". Traditionally this is called `main`, although you may see some older projects that use the name `master`. The term `master` has been abandoned due to its racist roots, but you'll still come across some projects that still use it due to structural/technical reasons.
 * When someone wants to make a change to the codebase they will `checkout` a branch from `main`, make their changes, and then `commit` them to their local branch.
@@ -15,7 +15,7 @@ A very brief overview of how GIT works:
 
 ## INFO: How this repo works
 
-This repo is protected, and requires a PR with an approval in order to merge it in to `main`. This means you can't make a change with `main` checked out on your local machine, then push directly to the repo. You *can* however make your own branch and then `push` it to Github. This can be a handy way to save and publish your work, but it's also how you'll submit your code to the project.
+This repo is protected, and requires a PR with an approval in order to merge it in to `main`. This means you can't make a change with `main` checked out on your local machine, then push directly to the repo. You *can* however make your own branch and then `push` it to GitHub. This can be a handy way to save and publish your work, but it's also how you'll submit your code to the project.
 
 The typical workflow you'll want to follow when submitting your code to the `main` branch of this repo:
 
@@ -31,8 +31,8 @@ You'll only need to do this a few times throughout the project for practice. The
 2. Make sure it's up to date with `git pull`
 3. Make a new branch that you'll use for your work throughout the project by running `git branch`. I'll be using "sig" as my branch name: `git branch sig`
 4. Switch to the new branch with `git checkout`, ie: `git checkout sig`
-5. Make a new file in the Module 1.2 folder. I'll be using the traditional "Hello World": `cd Module_1/1.2_GIT; touch HelloWorld.txt`
-6. Add the file to GIT via `git add` (Note: you can add all changed files from your current directory down to the subdirectories by appending a `.` instead of the filename), ie: `git add .`
+5. Make a new file in the Module 1.2 folder. I'll be using the traditional "Hello World": `cd Module_1/1.2_Git; touch HelloWorld.txt`
+6. Add the file to Git via `git add` (Note: you can add all changed files from your current directory down to the subdirectories by appending a `.` instead of the filename), ie: `git add .`
 7. Commit your change with `git commit -m` followed by a comment in quotes, like: `git commit -m "Initial commit to my personal branch"`. All commits require a message attached to them.
 8. Now we can push the branch to GH by setting its upstream origin branch: `git push --set-upstream origin sig`
 9. Now whenever you make a change on this branch you can commit and push them up to the branch on GH: `git add .` -> `git commit -m "message"` -> `git push`
@@ -81,6 +81,6 @@ NOTE: Rebasing can be a little hard to wrap your head around, even though it's d
 
 # Resources
 
-There's a lot of stuff that GIT can do, and even though it's conceptually simple it's complicated in practice. When in doubt, refer to the [GIT documentation](https://git-scm.com/doc) as well as [Github's docs](https://docs.github.com/en).
+There's a lot of stuff that Git can do, and even though it's conceptually simple it's complicated in practice. When in doubt, refer to the [Git documentation](https://git-scm.com/doc) as well as [GitHub's docs](https://docs.github.com/en).
 
-A dead simple overview of how GIT works can be found at [git - the simple guide](https://rogerdudler.github.io/git-guide/)
+A dead simple overview of how Git works can be found at [git - the simple guide](https://rogerdudler.github.io/git-guide/)
