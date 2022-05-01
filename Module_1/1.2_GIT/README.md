@@ -44,9 +44,9 @@ I recommend commiting fairly frequently, and pushing whenever you have some "fin
 * File 3 -> Deleted File -> commit 003
 * File 4 -> Created file, added 27 lines -> commit 004
 
-Then I pushed them to the upstream branch on GH... and realized "uh oh, I shouldn't have deleted those two lines in File 2". Instead of having to completely revert all the changes in the push I made (or manually adding the two lines back in) I can instead `revert` commit 001 and push that to GH, while preserving the changes in commits 002 through 004.
+Then I pushed them to the upstream branch on GH... and realized "uh oh, I shouldn't have deleted those two lines in File 2". Instead of having to completely revert all the changes in the push I made (or manually adding the two lines back in) I can instead `revert` commit 002 and push that to GH, while preserving the changes in the other commits.
 
-# PROMPT 1
+# PROJECT 1
 
 Alright let's get down to business... Create a new branch using the one you created in the INFO section as the base branch, then accomplish the following:
 
@@ -62,13 +62,13 @@ After doing this you should have a branch on GH that is based off your personal 
 
 Finally, merge your changes so that they appear in your personal branch on GH.
 
-# PROMPT 2
+# PROJECT 2
 
 As I mentioned, this will be one of the few (if not the only) time you'll open a PR to send to `main`. 
 
 Make a PR against `main` that adds a file called `PRTest.txt` to the module folder with "Lorem ipsum" as the contents, then request review from me (Sigurre). I'll make a request for change. Once the change has been approved on GH you'll merge it in to `main`.
 
-# PROMPT 3
+# PROJECT 3
 
 You'll frequently come across a situation where the `main` branch has had oodles of changes merged in to it by other people since you first checked it out, and now your branch is behind. There are several ways to resolve this, but the best and most common way is with `git rebase`. Accomplish the following:
 
@@ -77,7 +77,7 @@ You'll frequently come across a situation where the `main` branch has had oodles
 * Merge the first branch onto your personal branch
 * Rebase the second branch onto your personal branch, then merge it in to your personal branch
 
-NOTE: Rebasing can be a little hard to wrap your head around, even though it's deceptively simple. Consider requesting my review via a PR on the second branch to help explain things
+NOTE: Rebasing can be a little hard to wrap your head around, even though it's deceptively simple. Consider requesting my review via a PR on the second branch to help explain things if you're at all confused.
 
 # Resources
 

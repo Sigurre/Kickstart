@@ -48,16 +48,16 @@ There are a few important notes about the project:
 
 ## Get Started
 
-Enough is enough, let's get started! In order to begin you'll need to clone this repo to your local machine, and in order to do so you'll need [GIT](https://git-scm.com/). I'll go over details of GIT in Module 1.2, but for now you can install it using one of the following methods:
+Enough is enough, let's get started! In order to begin you'll need to clone this repo to your local machine, and in order to do so you'll need [Git](https://git-scm.com/). I'll go over details of Git in Module 1.2, but for now you can install it using one of the following methods:
 
 * [Recommended] Download and install it from the CLI using the [package manager for your Distro](https://git-scm.com/download/linux), or [Homebrew](https://git-scm.com/download/mac) for macOS.
-* Download it from the [GIT website](https://git-scm.com/downloads).
+* Download it from the [Git website](https://git-scm.com/downloads).
 
-**Please note:** GIT and the Github CLI are two seperate things. For now you can ignore the Github CLI whenever you come accross it.
+**Please note:** Git and the GitHub CLI are two seperate things. For now you can ignore the Github CLI whenever you come accross it.
 
-Once you've downloaded and installed GIT we'll need to setup your credentials with GIT and Github, then clone the Kickstart repo. There's multiple ways to do it (some easier than others), and some are preferable. However you choose to do it is up to you, but I recommend eventually setting up SSH authentication to work with Github for a number of reasons. Unfortunately it's not a very beginner friendly method, so it can be set up later if needed. Use whatever method works best for you currently.
+Once you've downloaded and installed Git we'll need to setup your credentials with Git and GitHub, then clone the Kickstart repo. There's multiple ways to do it (some easier than others), and some are preferable. However you choose to do it is up to you, but I recommend eventually setting up SSH authentication to work with GitHub for a number of reasons. Unfortunately it's not a very beginner friendly method, so it can be set up later if needed. Use whatever method works best for you currently.
 
-Follow Github's docs on [setting up your credentials](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git). Also take a look at their [Getting Started with Git](https://docs.github.com/en/get-started/getting-started-with-git) documentation for general guidance on how to set everything up. 
+Follow GitHub's docs on [setting up your credentials](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git). Also take a look at their [Getting Started with Git](https://docs.github.com/en/get-started/getting-started-with-git) documentation for general guidance on how to set everything up. 
 
 All of my examples in this project will be using the Terminal, but however you accomplish the task at hand is up to you. If you're cloning the repo via CLI then open your terminal and change to the directory where you want to keep it. I will be using the home directory (denoted by `~` in BASH and ZSH) in all my examples for simplicity. Personally I usually have a `Repos` folder in my home directory where I keep all my projects, and will be using that as an example this time.
 
