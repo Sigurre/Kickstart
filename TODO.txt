@@ -1,6 +1,3 @@
-Clarify and structure the section types (Prompts, Info, Resources)
-Shell/Terminal/CLI interchangeable
-Filenaming structure/best practices
 File permissions and ownership
 Add information about SUDO
 Add "nice to have" CLI skills
