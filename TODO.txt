@@ -2,3 +2,4 @@ File permissions and ownership
 Add information about SUDO
 Add "nice to have" CLI skills
 Info on ".." and "."
+Come up with a different term for Prompt/Project
