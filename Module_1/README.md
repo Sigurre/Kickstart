@@ -20,7 +20,7 @@ The vast majority of programming work is done either in a text editor, or in wha
 
 Text editors are used in programming typically as one half of a whole. You can write a program via a text editor but then... well... what do you do? The text editor can't really run it. Depending on the language and purpose of the program you may need to execute the file inside of the terminal, or compile it into binary code, or maybe it can only work when it's loaded onto a webserver. 
 
-IDEs serve as a tool to marry the two software types together. They serve as a "one stop shop" to combine text editting with a collection of utilities to run your programs (and more). There are generally two types of IDEs: multipurpose, or single purpose. For example *Eclipse* is an IDE that is pretty much only used with the Java programming language. Similarly *PyCharm* is only used with Python. On the other hand an IDE like *Visual Studio Code* is used for a wide array of languages by leveraging plugins.
+IDEs serve as a tool to marry the two software types together. They serve as a "one stop shop" to combine text editting with a collection of utilities to run your programs (and more). There are generally two types of IDEs: multipurpose, or single purpose. For example *Eclipse* is an IDE that is (pretty much) only used with the Java programming language. Similarly *PyCharm* is only used with Python. On the other hand an IDE like *Visual Studio Code* is used for a wide array of languages by leveraging plugins.
 
 Regardless of the scope of an IDE, it provides a number of useful tools to a programmer such as...
 
@@ -37,13 +37,13 @@ If we're just talking about using Notepad, then yeah... probably not a very usef
 
 An IDE is often the most attractive option to new programmers because it seems to have all the features you want, and then some. They're great tools to use, but depending on what you're doing it may be like driving a Ferrari to McDonalds. There are some situations (and languages) that pretty much *require* an IDE (like *Swift* and its IDE *XCode*). Most of the time (particularly in this project) a good text editor combined with the terminal will be more than sufficient. 
 
-Long story short: there are a lot of options here, and what you pick will mostly come down to the type of work you're doing as well as where/how you're doing it, and personal preference. I'll go over what I use (and for what) in the **Side Notes** section of Module 1. For now though, here are my recommendations for working with this repo.
+Long story short: there are a lot of options here, and what you pick will mostly come down to the type of work you're doing and where/how you're doing it, as well as personal preference. I'll go over what I use (and for what) in the **Tidbits** section of Module 1. For now though, here are my recommendations for working with this repo.
 
 ## Recommended IDEs: Visual Studio Code
 
 As I mentioned before, IDEs are robust tools with lots of features... but they sometimes have too many features, only support one or two languages, have licensing fees, etc. As I mentioned, there are some languages and types of work you'll want to use an IDE for, but the market for "free and flexible IDEs" is not as big as you would think.
 
-[Visual Studio Code](https://code.visualstudio.com) is the only IDE I recommend for this project, as well as for beginners and people who need flexibility. The program is free and open source, and has a rich community of users and organizations developing extensions for it. Need a extension that lets you compile C# programs? How about one that lets you manage Docker containers? Or maybe you'd like something that gives you more control over how your Python scripts run? There are extensions for all of those things.
+[Visual Studio Code](https://code.visualstudio.com) is the only IDE I recommend for this project, as well as for beginners and people who need flexibility. The program is free and open source, and has a rich community of users and organizations developing extensions for it. Need an extension that lets you compile C# programs? How about one that lets you manage Docker containers? Or maybe you'd like something that gives you more control over how your Python scripts run? There are extensions for all of those things.
 
 VSCode also comes with built in Git tools that are super useful. It provides custom themes, keyboard shortcuts, the list goes on...
 
@@ -55,11 +55,11 @@ Atom is open source, and is created by Github. Naturally it has some tight Git/G
 
 And then there's **Vi**... Vi is a whole other monster. I'm including it in my recommendations here because I genuinely do recommend it, but I don't really recommend you try using it right now...
 
-It's arguably the most widely used text editor because it's installed on every Linux machine, as well as macOS (go ahead and open a terminal up and type `vi` if you'd like to see). It's a *CLI only* text editor, meaning you do everything inside the terminal without a GUI. It's got a pretty high learning curve, since there's no such thing as using your mouse to select where your cursor should be or selecting blocks of text. 
+It's arguably the most widely used text editor because it's installed on every Linux machine, as well as macOS (go ahead and open a terminal up and type `vi` if you'd like to see). It's a **CLI only** text editor, meaning you do everything inside the terminal without a GUI. It's got a pretty high learning curve, since there's no such thing as using your mouse to select where your cursor should be or selecting blocks of text. 
 
 That being said, Vi (and it's derivatives, like Vim and NeoVim) takes the crown when it comes to speed, flexibility, and extensibility. The benefit of using such a "bare bones" program means you can tack on other plugins and programs to fit your needs. Additionally, since it's on literally every Linux machine you'll be able to use it whenever and wherever.
 
-We'll go over Vi in it's own submodule later on, since you'll need to use it at least occasionally. You'll often end up using it when you're connecting to a remote server, or need to do a quick text edit without leaving the terminal.
+We'll go over Vi in it's own submodule later, since you'll need to use it at least occasionally. You'll often end up using it when you're connecting to a remote server, or need to do a quick text edit without leaving the terminal.
 
 # Git Clients
 
