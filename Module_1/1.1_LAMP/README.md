@@ -95,7 +95,6 @@ This will be a handful of exercises for you to verify your familiarity with navi
 * Go to the `/bin` directory and list its contents
 * Clear the terminal screen so there's nothing on it
 * Also in the `/bin` directory, list the contents while also listing their creation date/time
-* Navigate one directory up and print its contents to the terminal
 * Navigate to the root (`/`) directory of your machine and list its contents
 * Go back to this module's directory and print the directory *path* to the terminal
 * Print the contents of this `README.md` to the terminal
