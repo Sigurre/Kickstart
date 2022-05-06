@@ -37,12 +37,12 @@ There are a few important notes about the project:
 	* The one exception to this is Module 1.2, because it involves working with this repo and pushing changes to it.
 	* You'll be pushing your work to your own personal branch on Github (see Module 1.2) for consistency and practice, but I won't critique your work unless requested.
 	* If you want help with something, want something expanded upon, or want critique of your work you will do so via GIT and Github (see Module 1.2--seriously, it's an important module).
-* Most modules will be split into an **Info** section, a **Project** section, and a **Resources** section.
+* Most modules will be split into an **Info** section, a **Task** section, and a **Resources** section.
 	* The **Info** section will include my personal thoughts on the subject(s) covered in the module.
-	* The **Project** sections will outline the project, task, or concept that is to be explored.
+	* The **Task** sections will outline the project or concept that is to be explored via your own practice and code.
 	* The **Resources** sections will include tutorials and documentation to help you learn how to address the Prompt.
-* I will provide hints and other thoughts in a separate file in each module/submodule. I do recommend looking at the information I include here, but try saving it for when you get stuck or have completed the associated Prompt!
-* Whenever a **Project** requires you to make files/code/folders do so inside of the (sub)module the **Project** is located (which will be in the `README.md` file for that folder).
+* I will provide hints and other thoughts in a separate **Tidbits** folder in each module/submodule. I do recommend looking at the information I include here, but try saving it for when you get stuck or have completed the associated Task!
+* Whenever a **Task** requires you to make files/code/folders do so inside of the (sub)module the **Task** is located (which will be in the `README.md` file for that folder).
 
 **FINALLY** it should be noted that you can follow this guide directly through your web browser in Github, or by opening the `README.md` files in each module on your local machine in the editor of your choice.
 

@@ -48,7 +48,7 @@ One common pitfall I encountered when I first started learning programming and I
 
 You'll learn to use a number of different languages over the course of your career. Some languages are easier to use or learn than others, and some are very well suited to certain tasks but are obscure and hard to use. The foundational information is what's important though. If you know the basics to write a program in one language, you can learn how to write the same thing in a different language easier than you may think. The internal mechanisms and logical structures between them stay the same.
 
-## INFO: The Task at Hand
+## INFO: Need to Know
 
 The primary focus of this submodule is to ensure that you're comfortable with using the CLI for basic tasks. Working in tech means reading a lot of raw text data, and typing a lot of commands...
 
@@ -64,6 +64,10 @@ Before providing the Projects, here are a few key shell concepts that will help 
 * You can find more info on a command by checking its "man" page, or using the `--help` argument if the program has one. The man page (short for manual) can be accessed by prepending `man` to the command. For example, to see the man page for `ls` you would run `man ls`. To see the help page for `git` run `git --help`.
 * Pretty much all commands and programs will output a "return code" after they've run (usually silently). This can be used to determine if a program succesfully ran (`return [0]`) or not.
 	* Looking at `ls` again, we can check the return code to see if a directory exists or not. If we run `ls ~/Kickstart` the program will return `0` if it exists, and return `1` if it doesnt.
+* There are a few handy shortcuts that you will use constantly in the terminal. One of them is your `history`: by using the [Up]/[Down] arrow keys you can scroll through your most recent commands and hit the [Return] key to run them again. No need to type that long string out again!
+	* You can also run `history` on its own to show a complete list of all the commands you've typed previously.
+* The [Tab] key can be used to autocomplete a directory path. For example you could type `cd ~/Ki` and then hit [Tab] to autocomplete to `cd ~/Kickstart`. 
+	* If there are multiple files/folders that start with `~/Ki` it will instead show you all those names beneath your prompt.
 
 Lastly here are the skills that you should be able to perform comfortably via a CLI in order to be succesful:
 
@@ -77,13 +81,13 @@ Lastly here are the skills that you should be able to perform comfortably via a 
 * Understand how and when to use `sudo`
 * Basic text editing
 
-# Projects - CRITICAL
+# Tasks - CRITICAL
 
-These Projects will focus on using the CLI to accomplish certain tasks. As such, they are **critical** and should be done before moving on. Don't skip them unless you know you can do them easily!
+These Tasks will focus on using the CLI to accomplish certain things. As such, they are **critical** and should be done before moving on. Don't skip them unless you know you can do them easily!
 
-Accomplish the following using **ONLY THE TERMINAL!** You can use a graphical text editor to add text to any created files, but all other tasks should be done via the terminal only!
+Accomplish the following using **ONLY THE TERMINAL!** You can use a graphical text editor to add text to any created files, but everything else should be done via the terminal only!
 
-## PROJECT 1
+## TASK 1
 This will be a handful of exercises for you to verify your familiarity with navigating the filesystem via the terminal.
 
 * Open the current submodule directory (where this file is kept)
@@ -97,7 +101,7 @@ This will be a handful of exercises for you to verify your familiarity with navi
 * Print the contents of this `README.md` to the terminal
 
 
-## PROJECT 2
+## TASK 2
 Now we'll start working with files...
 
 * Create a new file in this submodule called "HelloWorld.txt"
@@ -111,7 +115,7 @@ Now we'll start working with files...
 * Delete the empty directory
 * Delete the directory that contains one of the files you made
 
-## PROJECT 3
+## TASK 3
 We're going to continue working with files in some more advanced (but practical) ways. As usual I recommend using the directory this submodule is housed in as your sandbox. *These can (and should) be done using a single command.*
 
 * List all of the files in the `/bin` directory and put the results in a .txt file
@@ -122,8 +126,8 @@ We're going to continue working with files in some more advanced (but practical)
 sleep
 ```
 
-## PROJECT 4
-The previous Projects were designed to prove your mettle, but there are a plethora of other commands you'll need to use in your day to day. For this Project take the time to familiarize yourself with these commands and what they do. You don't need to worry about using them right now! Just do some reading up on them, and make sure you have them in your toolbelt in case you need them down the line. Remember to use the program's `man` page!
+## TASK 4
+The previous Tasks were designed to prove your mettle, but there are a plethora of other commands you'll need to use in your day to day. For this Task take the time to familiarize yourself with these commands and what they do. You don't need to worry about using them right now! Just do some reading up on them, and make sure you have them in your toolbelt in case you need them down the line. Remember to use the program's `man` page!
 
 ```
 date
