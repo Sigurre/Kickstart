@@ -33,14 +33,14 @@ In this repository (repo for short) is a collection of folders and files that se
 
 * There are some modules (or submodules) that I will mark as **critical**. These are ones that I consider paramount to understanding the concepts of this tutorial, and should not be *completely* skipped.
 * The entire structure of this tutorial relies on the concepts in Module 1.1 and 1.2, *and I highly recommend completing them before moving on to the next ones.*
-* "Completion" is a loose term here, and can vary depending on your comfort level. While there are mini projects (Prompts) and concepts (Info) that will be stated in each module, there's no checklist you need to go through. Move on when you feel ready, and feel free to reach out if you have questions or want a subject expanded on.
+* "Completion" is a loose term here, and can vary depending on your comfort level. While there are mini projects (Tasks) and concepts (Info) that will be stated in each module, there's no checklist you need to go through. Move on when you feel ready, and feel free to reach out if you have questions or want a subject expanded on.
 
 There are a few important notes about the project:
 
 * This project works on the honor system, in a sense. You don't need to "submit" any work you complete if you don't want to. I'm serving as a mentor, not as your professor.
 	* The one exception to this is Module 1.2, because it involves working with this repo and pushing changes to it.
 	* You'll be pushing your work to your own personal branch on Github (see Module 1.2) for consistency and practice, but I won't critique your work unless requested.
-	* If you want help with something, want something expanded upon, or want critique of your work you will do so via GIT and Github (see Module 1.2--seriously, it's an important module).
+	* If you want help with something, want something expanded upon, or want critique of your work you will do so via Git and Github (see Module 1.2--seriously, it's an important module).
 * Most modules will be split into an **Info** section, a **Task** section, and a **Resources** section.
 	* The **Info** section will include my personal thoughts on the subject(s) covered in the module.
 	* The **Task** sections will outline the project or concept that is to be explored via your own practice and code.
