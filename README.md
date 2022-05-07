@@ -21,7 +21,7 @@ As such, there are a few things that you'll want to be familiar with before jump
 * The CLI (Command Line Interface), commonly referred to as Terminal on macOS (and many Linux Distros).
 	* BASH or ZSH are the "Shells" used by these interfaces, but we'll cover that later...
 
-**_It should also be noted that this guide is a Linux/macOS only guide, and Windows concepts will not be covered._**
+**_It should also be noted that this guide is a Linux/macOS only guide, and Windows concepts will not be covered._** If you only have a Windows machine to work with you can install the Windows Subsystem for Linux to get access to the tools this explores. Please note that there are some quirks between them that I may not be privy to, so be aware of that as you work through this project.
 
 ## How it's structured
 
