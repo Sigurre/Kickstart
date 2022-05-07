@@ -23,6 +23,10 @@ As such, there are a few things that you'll want to be familiar with before jump
 
 **_It should also be noted that this guide is a Linux/macOS only guide, and Windows concepts will not be covered._** If you only have a Windows machine to work with you can install the Windows Subsystem for Linux to get access to the tools this explores. Please note that there are some quirks between them that I may not be privy to, so be aware of that as you work through this project.
 
+Microsoft's documentation on the subsystem: https://docs.microsoft.com/en-us/windows/wsl/install
+
+Another nifty tutorial: https://itsfoss.com/install-bash-on-windows/
+
 ## How it's structured
 
 In this repository (repo for short) is a collection of folders and files that serve as the structure of the "curriculum". I will be referring to the top level directories as "modules", while the folders nested within them are "submodules" _They are organized in such a way to build upon eachother in succession, but you can work with them at your own pace and in whatever order you would like._ You may find that there are sections that you feel familair and confident with, and want to skip over. Or maybe there's a module that is particularly difficult or confusing, but you don't want to get hung up on it. Feel free to skip ahead and come back later! There are a few caveats though:
